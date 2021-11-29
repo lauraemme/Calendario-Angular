@@ -1,0 +1,9 @@
+.hidden{
+    visibility: hidden;
+    text-align: center;
+}
+
+.btn-newEvent{
+    width: 100px;
+    height: 30px;
+}

@@ -1,0 +1,12 @@
+<div class="day-info">
+    <span>{{importedDay.dateString}}</span>
+</div>
+<div class="events-wrapper">
+    <span>Aqui</span>
+    <app-event-resume *ngFor="let event of eventList"></app-event-resume>
+</div>
+<div class="btn-newEvent">
+    <button type="button" (click)="openEventCreator()">Novo Evento</button>
+    <app-event-creator class="hidden" (eventCreated)="addEvent($event)"></app-event-creator>   
+</div>
+
